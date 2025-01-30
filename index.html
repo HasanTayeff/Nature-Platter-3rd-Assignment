@@ -27,8 +27,8 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                'header-bg': "#cccccc",
-                'custom-bg': 'linear-gradient(to top, #a7f1954b 10%, #ffffff73 90%), url('/assets/bg.png')',
+                 'text-color': "#111111",
+                'bg-color': '#EFEBE3',
     
               }
             }
@@ -49,7 +49,7 @@
 </head>
 <body>
    
-    <div class="bg-[linear-gradient(to_top,#EFEBE3_80%,#ffffff_100%),url('/assets/bg.png')]">
+    <header class="bg-[linear-gradient(to_top,#EFEBE3_80%,#ffffff_100%),url('/assets/bg.png')]">
 
         
      <div class="container m-auto">
@@ -112,21 +112,246 @@
 
         <!-- Banner Section  -->
 
-        <div class="max-w-[700px] flex flex-col gap-5 items-center justify-center m-auto text-center px-10 md:pt-10">
-            <h1 class="font-semibold text-[25px]">Freshness <span class="text-green-500">You Can Count</span> On, You Can Count On, Prices You'll Love!</h1>
-            <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we've got you covered every day!</p>
+        <div class="max-w-[700px] flex flex-col gap-5 items-center justify-center m-auto text-center px-10 mt-5 md:mt-10 lg:mt-14">
+            <h1 class="font-semibold max-w-[600px] text-[20px] md:text-[27px] lg:text-[35px]">Freshness <span class="text-green-500">You Can Count</span> On, You Can Count On, Prices You'll Love!</h1>
+            <p class="md:text-[12px] lg:md:text-[17px] text-text-color">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we've got you covered every day!</p>
         </div>
 
         <div class="m-auto">
             <img class="w-3/4 md:w-2/4  m-auto" src="Assets/hero-vegetables.png" alt="">
         </div>
-           
-        
-
-
-
+    
     </div>
 
-  </div>
+ </header>
+   
+
+  <!-- Main Area -->
+
+  <main class="my-20">
+
+    <!-- Services Section -->
+
+      <div class="container m-auto px-5">
+          <h2 class="font-semibold text-[25px] my-4 text-green-500">Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 ">
+            <div class="bg-bg-color px-5 py-5 bg-color text-center border rounded-lg">
+                <img class="m-auto bg-white px-5 py-5 rounded-full" src="Assets/service.png" alt="service">
+                <h3 class="font-semibold text-[16px] my-5">24/7 Services </h3>
+                <p class="md:text-[12px] lg:md:text-[17px] text-text-color">You can order vegetables in any time of the day, no matter whether it's day or night</p>
+            </div>
+            <div class="bg-bg-color px-5 py-5 bg-color text-center border rounded-lg">
+                <img class="m-auto bg-white px-5 py-5 rounded-full" src="Assets/delivery.png" alt="delivery">
+                <h3 class="font-semibold text-[16px] my-5">Fast Delivery</h3>
+                <p class="md:text-[12px] lg:md:text-[17px] text-text-color">We ensure the the fastest dlivery other than any vegetable's shop in the city.</p>
+            </div>
+            <div class="bg-bg-color px-5 py-5 bg-color text-center border rounded-lg">
+                <img class="m-auto bg-white px-5 py-5 rounded-full" src="Assets/healthy.png" alt="healthy">
+                <h3 class="font-semibold text-[16px] my-5">Healthy Products </h3>
+                <p class="md:text-[12px] lg:md:text-[17px] text-text-color">Believing "Health is Wealth" has been our main priority since its establishemnt. </p>
+            </div>
+          </div>
+      </div>
+
+      <!-- Popular Products Section -->
+
+
+      <div class="bg-bg-color  py-16 my-20">
+        <h2 class="font-semibold text-[25px] mb-4 px-5 lg:px-10 text-green-500">Popular Products</h2>
+        <div class="container m-auto px-5">
+            <div class="w-full flex flex-col lg:flex-row  gap-5">
+            <div class="bg-gradient-to-br from-green-400 to-white-300 shadow-lg relative h-80 md:h-[340px] lg:h-auto lg:w-[40%]  py-5 px-5">
+
+                <div class="">
+                    <h3 class="font-semibold text-white text-[20px]">30% off</h3>
+                    <p class="md:text-[12px] lg:md:text-[17px] text-text-color mt-3 mb-3">We are offering a large <br> discount to our customers</p>
+                    <button class="btn bg-white text-black">Buy Now</button>
+                </div>
+
+                <div class="absolute bottom-0 right-1 w-[230px] md:[300px] lg:w-[210px]"><img src="Assets/vegetable-offer.png" alt=""></div>
+            </div>
+
+             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:w-[60%] ">
+
+                <!-- Box-1 -->
+                <div class="bg-white flex px-3 py-3 lg:max-w-[220px] gap-3 md:gap-2 lg:gap-5 rounded-lg">
+
+                    <img class="bg-bg-color rounded-md md:w-14 md:h-14 py-0 px-0" src="Assets/tomato.png" alt="">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <div>⭐</div>
+                            <h6 class="font-semibold text-[10px] md:text-[11px]">4.5</h6>
+                        </div>
+                        <h4 class="font-semibold text-[11px]  md:text-[12px]">Tomato 1 KG</h4>
+                        <h5 class="font-semibold text-[10px]  md:text-[11px]">$0.89</h5>
+
+                    </div>
+        
+                 </div>
+
+                <!-- Box-2 -->
+                <div class="bg-white flex px-3 py-3 lg:max-w-[220px] gap-3 md:gap-2 lg:gap-5 rounded-lg">
+
+                    <img class="bg-bg-color rounded-md  md:w-14 md:h-14 py-0 px-0" src="Assets/onion.png" alt="">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <div>⭐</div>
+                            <h6 class="font-semibold text-[10px]  md:text-[11px]">4.5</h6>
+                        </div>
+                        <h4 class="font-semibold text-[11px] md:text-[12px]">Onion 1 KG</h4>
+                        <h5 class="font-semibold text-[10px] md:text-[11px]">$2.49</h5>
+
+                    </div>
+        
+                 </div>
+                  
+
+                <!-- Box-3 -->
+
+                <div class="bg-white flex px-3 py-3 lg:max-w-[220px] gap-3 md:gap-2 lg:gap-5 rounded-lg">
+
+                    <img class="bg-bg-color rounded-md  md:w-14 md:h-14 py-0 px-0" src="Assets/potato.png" alt="">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <div>⭐</div>
+                            <h6 class="font-semibold text-[10px] md:text-[11px]">4.5</h6>
+                        </div>
+                        <h4 class="font-semibold text-[11px]  md:text-[12px]">Potato 1 KG</h4>
+                        <h5 class="font-semibold text-[10px]  md:text-[11px]">$1.29</h5>
+
+                    </div>
+        
+                 </div>
+
+                <!-- Box-4 -->
+
+                <div class="bg-white flex px-3 py-3 lg:max-w-[220px] gap-3 md:gap-2 lg:gap-5 rounded-lg">
+
+                    <img class="bg-bg-color rounded-md  md:w-14 md:h-14 py-0 px-0" src="Assets/potato.png" alt="">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <div>⭐</div>
+                            <h6 class="font-semibold text-[10px] md:text-[11px]">4.5</h6>
+                        </div>
+                        <h4 class="font-semibold text-[11px] md:text-[12px]">Potato 1 KG</h4>
+                        <h5 class="font-semibold text-[10px] md:text-[11px]">$1.29</h5>
+
+                    </div>
+        
+                 </div>
+
+                <!-- Box-5 -->
+
+                <div class="bg-white flex px-3 py-3 lg:max-w-[220px] gap-3 md:gap-2 lg:gap-5 rounded-lg">
+
+                    <img class="bg-bg-color rounded-md md:w-14 md:h-14 py-0 px-0" src="Assets/tomato.png" alt="">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <div>⭐</div>
+                            <h6 class="font-semibold text-[10px] md:text-[11px]">4.5</h6>
+                        </div>
+                        <h4 class="font-semibold text-[11px]  md:text-[12px]">Tomato 1 KG</h4>
+                        <h5 class="font-semibold text-[10px]  md:text-[11px]">$0.89</h5>
+
+                    </div>
+        
+                 </div>
+
+
+                <!-- Box-6 -->
+
+                <div class="bg-white flex px-3 py-3 lg:max-w-[220px] gap-3 md:gap-2 lg:gap-5 rounded-lg">
+
+                    <img class="bg-bg-color rounded-md md:w-14 md:h-14 py-0 px-0" src="Assets/onion.png" alt="">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <div>⭐</div>
+                            <h6 class="font-semibold text-[10px] md:text-[11px]">4.5</h6>
+                        </div>
+                        <h4 class="font-semibold text-[11px] md:text-[12px]">Onion 1 KG</h4>
+                        <h5 class="font-semibold text-[10px] md:text-[11px]">$2.49</h5>
+
+                    </div>
+        
+                 </div>
+
+                <!-- Box-7 -->
+
+                <div class="bg-white flex px-3 py-3 lg:max-w-[220px] gap-3 md:gap-2 lg:gap-5 rounded-lg">
+
+                    <img class="bg-bg-color rounded-md md:w-14 md:h-14 py-0 px-0" src="Assets/tomato.png" alt="">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <div>⭐</div>
+                            <h6 class="font-semibold text-[10px] md:text-[11px]">4.5</h6>
+                        </div>
+                        <h4 class="font-semibold text-[11px]  md:text-[12px]">Tomato 1 KG</h4>
+                        <h5 class="font-semibold text-[10px]  md:text-[11px]">$0.89</h5>
+
+                    </div>
+        
+                 </div>
+
+
+                <!-- Box-8 -->
+
+                <div class="bg-white flex px-3 py-3 lg:max-w-[220px] gap-3 md:gap-2 lg:gap-5 rounded-lg">
+
+                    <img class="bg-bg-color rounded-md md:w-14 md:h-14 py-0 px-0" src="Assets/onion.png" alt="">
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <div>⭐</div>
+                            <h6 class="font-semibold text-[10px] md:text-[11px]">4.5</h6>
+                        </div>
+                        <h4 class="font-semibold text-[11px] md:text-[12px]">Onion 1 KG</h4>
+                        <h5 class="font-semibold text-[10px] md:text-[11px]">$1.49</h5>
+
+                    </div>
+        
+                 </div>
+
+                <!-- Box-9 -->
+                 <div class="hidden md:block ">
+                    <div class="bg-white flex px-3 py-3 lg:max-w-[220px] gap-3 md:gap-2 lg:gap-5 rounded-lg">
+
+                        <img class="bg-bg-color rounded-md md:w-14 md:h-14 py-0 px-0" src="Assets/potato.png" alt="">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <div>⭐</div>
+                                <h6 class="font-semibold text-[10px] md:text-[11px]">4.5</h6>
+                            </div>
+                            <h4 class="font-semibold text-[11px] md:text-[12px]">Onion 1 KG</h4>
+                            <h5 class="font-semibold text-[10px] md:text-[11px]">$1.49</h5>
+    
+                        </div>
+            
+                     </div>
+                 </div>
+
+
+                
+               
+
+                
+             </div>
+
+
+            </div>
+
+        </div>
+         
+
+
+
+      </div>
+
+
+
+
+
+  </main>
+
+
+
 </body>
 </html>
